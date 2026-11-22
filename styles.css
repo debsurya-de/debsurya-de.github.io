@@ -40,7 +40,7 @@ h1 em { color: var(--mint); font-weight: 400; }
 .links .primary { padding: .65rem 1rem; background: var(--mint); color: var(--ink); text-decoration: none; border-radius: .3rem; }
 .links .primary:hover { background: white; }
 .portrait { margin: 0; width: min(100%, 23rem); justify-self: center; }
-.portrait img { display: block; width: 100%; height: auto; border-radius: .5rem; border: 1px solid #44615f; }
+.portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 30% center; border-radius: .5rem; border: 1px solid #44615f; }
 .portrait figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; margin-top: .85rem; color: #dce8e6; font-size: .85rem; }
 .portrait figcaption span { color: var(--mint); }
 .section { display: grid; grid-template-columns: 30% 1fr; gap: 4%; padding-block: clamp(3rem, 6vw, 5rem); border-bottom: 1px solid var(--rule); }
