@@ -4,94 +4,80 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Debsurya De is a PhD candidate in Applied Mathematics and Statistics at Johns Hopkins University.">
-  <meta name="theme-color" content="#0b1821">
+  <meta name="theme-color" content="#fbfaf7">
   <meta property="og:title" content="Debsurya De">
   <meta property="og:description" content="PhD candidate in Applied Mathematics and Statistics at Johns Hopkins University.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://debsurya-de.github.io">
-  <title>Debsurya De</title>
-  <link rel="stylesheet" href="styles.css?v=portrait-3">
+  <title>Debsurya De | Applied Mathematics &amp; Statistics</title>
+  <link rel="stylesheet" href="styles.css?v=folio-4">
   <script src="script.js?v=portfolio-2" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header>
-    <div class="container header-inner">
-      <a class="name" href="#top"><span class="mark" aria-hidden="true">∿</span> Debsurya De</a>
-      <nav aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#software">Software</a>
-        <a href="#experience">Experience</a>
-      </nav>
-    </div>
+  <header class="container mast">
+    <a class="signature" href="#top">Debsurya De<span aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#software">Software</a><a href="#experience">Experience</a></nav>
   </header>
-
   <main id="main">
-    <section class="intro container" id="top">
-      <div class="intro-grid">
-        <div class="intro-copy">
-          <p class="eyebrow">Applied Mathematics &amp; Statistics</p>
-          <h1>Debsurya <em>De</em></h1>
-          <p class="intro-text">I’m a PhD candidate at Johns Hopkins University. I study the mathematics of statistical inference and develop algorithms and software for analyzing complex data.</p>
-          <div class="links"><a class="primary" href="#publications">Explore publications</a><a href="https://scholar.google.com/citations?hl=en&amp;user=wewbBVgAAAAJ">Google Scholar</a></div>
+    <section class="container hero" aria-labelledby="name">
+      <div class="intro">
+        <p class="eyebrow">Applied Mathematics &amp; Statistics</p>
+        <h1 id="name">Debsurya<br><em>De<span>.</span></em></h1>
+        <p class="bio">I’m a PhD candidate at Johns Hopkins University. I study the mathematics of statistical inference and develop algorithms and software for analyzing complex data.</p>
+        <div class="actions"><a class="button" href="#research">Explore my work</a><a href="https://www.linkedin.com/in/rush21">Contact on LinkedIn</a></div>
+      </div>
+      <div class="portrait"><img src="profile.jpg?v=blazer" width="1024" height="1024" alt="Debsurya De wearing a tan blazer" fetchpriority="high"></div>
+    </section>
+    <section id="research" class="research">
+      <div class="container">
+        <h2>Research</h2>
+        <div class="directions">
+          <article><h3>What can an efficient algorithm learn?</h3><p>I use probability, combinatorics, and low-degree polynomials to study the gap between what the data reveal and what an algorithm can recover efficiently.</p><div><a href="#low-rank-estimation">STOC 2026 paper</a> · <a href="#tensor-clt">Tensor CLTs</a></div></article>
+          <article><h3>How do we learn from partial data?</h3><p>Different datasets can measure overlapping groups of people or objects. I study how to align the information shared across groups to estimate their common structure.</p><div><a href="#data-integration">Multi-source data integration</a></div></article>
+          <article><h3>How do models become usable tools?</h3><p>I develop optimization methods for combining predictors and clustering sequences. My applied work includes studying how treatment histories vary across patients.</p><div><a href="#software">SCOR package</a> · <a href="#sequence-clustering">Sequence models</a></div></article>
         </div>
-        <figure class="portrait">
-          <img src="profile.jpg?v=blazer" width="1024" height="1024" alt="Debsurya De wearing a tan blazer" fetchpriority="high">
-          <figcaption>Johns Hopkins University <span>Baltimore, Maryland</span></figcaption>
-        </figure>
       </div>
     </section>
-
-    <section class="container section" id="research">
-      <h2>Research</h2>
-      <div class="section-content">
-        <p>In high-dimensional statistics, I study how much data and computation a problem requires. I use tools from probability and theoretical computer science to understand the limits of efficient algorithms.</p>
-        <p>I also develop methods for combining data from different sources, clustering sequences, and solving constrained optimization problems. In biomedical collaborations, I’ve used these tools to study treatment histories and combine predictors of clinical outcomes.</p>
-        <p>My advisor is <a href="https://www.kunisky.com">Professor Dmitriy (Tim) Kunisky</a>. I expect to graduate in September 2027.</p>
-      </div>
-    </section>
-
     <section class="container section" id="publications">
-      <h2>Publications</h2>
+      <h2>Publications <sup>06</sup></h2>
       <div class="section-content publication-list">
-        <article class="publication">
+        <article class="publication" id="tensor-clt">
           <h3><a href="https://arxiv.org/abs/2611.15803" target="_blank" rel="noreferrer">Statistical-to-computational gaps in central limit theorems for high-dimensional tensors</a></h3>
           <p>Debsurya De and Dmitriy Kunisky</p>
           <p class="venue">arXiv preprint 2611.15803, November 2026.</p>
           <p class="paper-links"><a href="https://arxiv.org/abs/2611.15803" target="_blank" rel="noreferrer">arXiv</a></p>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="data-integration">
           <h3><a href="https://arxiv.org/abs/2609.38141" target="_blank" rel="noreferrer">Global synchronization for multi-source data integration under blockwise missing patterns</a></h3>
           <p>Runbing Zheng, Debsurya De, and Dmitriy Kunisky</p>
           <p class="venue">arXiv preprint 2609.38141, September 2026.</p>
           <p class="paper-links"><a href="https://arxiv.org/abs/2609.38141" target="_blank" rel="noreferrer">arXiv</a></p>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="low-rank-estimation">
           <h3><a href="https://arxiv.org/abs/2510.08541" target="_blank" rel="noreferrer">Computational and statistical lower bounds for low-rank estimation under general inhomogeneous noise</a></h3>
           <p>Debsurya De and Dmitriy Kunisky</p>
           <p class="venue">Proceedings of the 58th ACM Symposium on Theory of Computing (STOC), 2026.</p>
           <p class="paper-links"><a href="https://arxiv.org/abs/2510.08541" target="_blank" rel="noreferrer">arXiv</a> · <a href="https://doi.org/10.1145/3798129.3800905" target="_blank" rel="noreferrer">DOI</a></p>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="sequence-clustering">
           <h3><a href="https://doi.org/10.1080/10618600.2023.2257258" target="_blank" rel="noreferrer">Clustering sequence data with mixture Markov chains with covariates using multiple simplex constrained optimization routine (MSiCOR)</a></h3>
           <p>Priyam Das, Deborshee Sen, Debsurya De, and coauthors</p>
           <p class="venue">Journal of Computational and Graphical Statistics, 2024.</p>
           <p class="paper-links"><a href="https://arxiv.org/abs/1609.02249" target="_blank" rel="noreferrer">arXiv</a> · <a href="https://doi.org/10.1080/10618600.2023.2257258" target="_blank" rel="noreferrer">DOI</a></p>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="treatment-sequences">
           <h3><a href="https://doi.org/10.1186/s13075-023-03072-0" target="_blank" rel="noreferrer">Utilizing biologic disease-modifying anti-rheumatic treatment sequences to subphenotype rheumatoid arthritis</a></h3>
           <p>Priyam Das, Dana Weisenfeld, Kumar Dahal, Debsurya De, and coauthors</p>
           <p class="venue">Arthritis Research &amp; Therapy, 2023.</p>
           <p class="paper-links"><a href="https://pubmed.ncbi.nlm.nih.gov/37269020/" target="_blank" rel="noreferrer">PubMed</a> · <a href="https://doi.org/10.1186/s13075-023-03072-0" target="_blank" rel="noreferrer">DOI</a></p>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="predictor-optimization">
           <h3><a href="https://doi.org/10.1186/s12859-022-04953-y" target="_blank" rel="noreferrer">Estimating the optimal linear combination of predictors using spherically constrained optimization</a></h3>
           <p>Priyam Das, Debsurya De, Raju Maiti, and coauthors</p>
           <p class="venue">BMC Bioinformatics, 2022.</p>
@@ -106,8 +92,8 @@
       <h2>Software</h2>
       <div class="section-content">
         <article class="software-item">
-          <h3><a href="https://CRAN.R-project.org/package=SCOR" target="_blank" rel="noreferrer">SCOR: Spherically Constrained Optimization Routine</a></h3>
-          <p>I developed and maintain SCOR, an R package for derivative-free optimization of functions whose variables lie on unit spheres. The package was developed with Priyam Das.</p>
+          <h3><a href="https://CRAN.R-project.org/package=SCOR" target="_blank" rel="noreferrer">SCOR</a></h3>
+          <p>I developed SCOR with Priyam Das and maintain it as an R package. It optimizes functions on products of unit spheres without requiring derivatives.</p>
           <p class="software-meta">CRAN · Version 1.1.2 · GPL-3</p>
           <p class="paper-links"><a href="https://CRAN.R-project.org/package=SCOR" target="_blank" rel="noreferrer">CRAN</a> · <a href="https://github.com/synx21/SCOR" target="_blank" rel="noreferrer">GitHub</a></p>
         </article>
@@ -119,7 +105,7 @@
       <div class="section-content timeline">
         <article>
           <div class="date">2022–present</div>
-          <div><h3>Johns Hopkins University</h3><p>PhD candidate in Applied Mathematics and Statistics</p></div>
+          <div><h3>Johns Hopkins University</h3><p>PhD candidate in Applied Mathematics and Statistics. Expected September 2027.</p><p>Advised by <a href="https://www.kunisky.com">Professor Dmitriy (Tim) Kunisky</a>.</p></div>
         </article>
         <article>
           <div class="date">2021–2022</div>
