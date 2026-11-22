@@ -4,24 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Debsurya De is a PhD candidate in Applied Mathematics and Statistics at Johns Hopkins University.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0b1821">
   <meta property="og:title" content="Debsurya De">
   <meta property="og:description" content="PhD candidate in Applied Mathematics and Statistics at Johns Hopkins University.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://synx21.github.io">
+  <meta property="og:url" content="https://debsurya-de.github.io">
   <title>Debsurya De</title>
-  <link rel="stylesheet" href="styles.css?v=20260904-1">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261121">
+  <script src="script.js?v=20261121" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header>
     <div class="container header-inner">
-      <a class="name" href="#top">Debsurya De</a>
+      <a class="name" href="#top"><span class="mark" aria-hidden="true">∿</span> Debsurya De</a>
       <nav aria-label="Main navigation">
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
         <a href="#experience">Experience</a>
       </nav>
     </div>
@@ -31,26 +32,26 @@
     <section class="intro container" id="top">
       <div class="intro-grid">
         <div class="intro-copy">
-          <h1>Statistics, computation, and the limits of inference.</h1>
-          <p class="intro-text">I am a PhD candidate in Applied Mathematics and Statistics at Johns Hopkins University. I study the statistical and computational limits of high-dimensional inference. My advisor is <a href="https://www.kunisky.com" target="_blank" rel="noreferrer">Professor Dmitriy (Tim) Kunisky</a>.</p>
-          <p class="details">Expected graduation: September 2027 · Baltimore, Maryland</p>
-          <div class="links" aria-label="Profile links">
-        <a href="https://scholar.google.com/citations?hl=en&amp;user=wewbBVgAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/rush21" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/synx21" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          <p class="eyebrow">Applied Mathematics &amp; Statistics</p>
+          <h1>Debsurya <em>De</em></h1>
+          <p class="lede">I study the limits of inference.</p>
+          <p class="intro-text">I’m a PhD candidate at Johns Hopkins University. My work asks when a signal can be detected in noisy data and when an efficient algorithm can find it.</p>
+          <div class="links"><a class="primary" href="#publications">Explore publications</a><a href="https://scholar.google.com/citations?hl=en&amp;user=wewbBVgAAAAJ">Google Scholar</a></div>
         </div>
-        <figure class="portrait">
-          <img src="profile.jpg" alt="Debsurya De seated at a café">
+        <figure class="signal">
+          <figcaption><span>Signal + noise</span><span class="notation">Y = λuuᵀ + W</span></figcaption>
+          <canvas id="field" width="840" height="450" role="img" aria-label="Wireframe of a noisy matrix with an adjustable rank-one signal"></canvas>
+          <div class="controls"><label for="strength">Signal strength</label><input id="strength" type="range" min="0" max="3" step="0.1" value="1.6"><output for="strength" id="value">λ = 1.6</output></div>
         </figure>
       </div>
     </section>
 
     <section class="container section" id="research">
-      <h2>Research</h2>
+      <div class="profile"><h2>Research</h2><img src="profile.jpg" alt="Debsurya De seated at a café" loading="lazy"><p>Johns Hopkins University<br>Baltimore, Maryland</p></div>
       <div class="section-content">
         <p>My research is in probability, high-dimensional statistics, machine learning, and theoretical computer science. I am particularly interested in problems where statistical estimation is possible in principle but may be computationally difficult.</p>
         <p>I use low-degree polynomial methods, concentration inequalities, random matrix theory, and combinatorial techniques. My recent work studies low-rank estimation under inhomogeneous noise.</p>
+        <p>My advisor is <a href="https://www.kunisky.com">Professor Dmitriy (Tim) Kunisky</a>. I expect to graduate in September 2027.</p>
         <ul class="topics">
           <li>Statistical-computational gaps</li>
           <li>High-dimensional inference</li>
@@ -88,7 +89,7 @@
           <p class="venue">BMC Bioinformatics, 2022.</p>
         </article>
 
-        <p><a href="https://scholar.google.com/citations?hl=en&amp;user=wewbBVgAAAAJ" target="_blank" rel="noreferrer">See all publications on Google Scholar →</a></p>
+        <p><a href="https://scholar.google.com/citations?hl=en&amp;user=wewbBVgAAAAJ" target="_blank" rel="noreferrer">All publications on Google Scholar</a></p>
       </div>
     </section>
 
@@ -141,7 +142,7 @@
   <footer>
     <div class="container footer-inner">
       <p>© <span id="year"></span> Debsurya De</p>
-      <a href="#top">Back to top</a>
+      <div class="social"><a href="https://www.linkedin.com/in/rush21">LinkedIn</a><a href="https://github.com/debsurya-de">GitHub</a><a href="#top">Back to top</a></div>
     </div>
   </footer>
 </body>
